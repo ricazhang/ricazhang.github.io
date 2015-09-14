@@ -1,0 +1,163 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #E5E5E5;
+  font-color: #666666;
+  font-family: Avenir;
+  overflow: scroll;
+}
+
+nav {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100;
+  height: 3em;
+  background-color: #003366;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+}
+
+.menu-element {
+  line-height: 3em;
+}
+
+#page-name {
+  float: left;
+  color: white;
+}
+
+#active-season {
+  margin: auto;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+#menu-container {
+  float: right;
+}
+#menu-container .menu-btn {
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+}
+#menu-container .menu-btn .menu-link {
+  text-decoration: none;
+  color: white;
+}
+#menu-container .menu-btn .menu-link:hover {
+  opacity: 0.5;
+}
+
+#main-section {
+  width: 79em;
+  margin: auto;
+  text-align: center;
+}
+
+#schedule {
+  width: 54em;
+  height: 100%;
+  /*float: left;*/
+  display: inline-block;
+  vertical-align: top;
+  background-color: white;
+  text-align: center;
+  margin-right: 1em;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+}
+
+.calendar-row {
+  height: 4.5em;
+  line-height: 4.5em;
+  width: 100%;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+#hours-row {
+  text-align: right;
+  height: 3em;
+  line-height: 3em;
+  background-color: #B5B5B5;
+  padding-right: 0.75em;
+  border-bottom: 0px;
+}
+
+.hour {
+  text-align: center;
+  display: inline-block;
+  width: 3.5em;
+  font-size: 1em;
+  color: white;
+  /*border: 1px black solid;*/
+}
+
+.clear {
+  clear: both;
+}
+
+.day-title {
+  width: 7.5em;
+  background-color: #235F9C;
+  opacity: 0.7;
+  color: white;
+}
+
+#courses {
+  width: 20em;
+  height: 100%;
+  background-color: white;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+ }
+
+.courses-search {
+  text-align: center;
+  height: 3em;
+}
+
+input#courses-searchbar {
+    padding-left:46px !important;
+    background-color:#DAD0C6 !important;
+    border:none !important;
+    height: 3em !important;
+    border-radius: 0px !important;
+}
+/*
+input#courses-searchbar:hover {
+    opacity: 80% !important;
+}
+
+input#courses-searchbar:active {
+    opacity: 60% !important;
+}
+*/
+form.form-search {
+    position: relative;
+}
+
+form.form-search:before {
+    display: block;
+    width: 14px;
+    height: 14px;
+    content: "\e003";
+    font-family: 'Glyphicons Halflings';
+    background-position: 50% 50%;
+    position: absolute;
+    top:0.75em;
+    left:1em;
+    opacity: .5;
+    z-index: 1000;
+}
+
+.courses-content {
+  height: 31.5em;
+  /*border: 1px solid #DAD0C6;*/
+}
+
