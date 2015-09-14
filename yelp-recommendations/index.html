@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="yelp">
+  <head>
+    <link href="bootstrap-3.3.4-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css" rel="stylesheet"></script>
+    <link href="yelp.css" rel="stylesheet">
+
+    <script src="jquery-1.11.2.min.js"></script>
+    <script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
+    <script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script src="force.js"></script>
+    <script src="yelp.js"></script> 
+    <title>Yelp Recommendation Engine</title>
+  </head>
+
+  <body ng-controller="TabController as panel">
+    <header>
+        <!--<img src="http://streetfightmagcom.b.presscdn.com/wp-content/uploads/yelp-logo.jpeg"/>-->
+        <h1>Yelp Recommendation Engine</h1>
+    </header>
+
+    <div id="yelp-nav">
+        <ul id="yelp-nav-ul" class="nav nav-tabs">
+          <li class="yelp-nav-button" ng-class="{ active:panel.isSelected(1)}"><a href ng-click="panel.selectTab(1)">Recommendations</a></li>
+          <li class="yelp-nav-button" ng-class="{ active:panel.isSelected(2)}"><a href ng-click="panel.selectTab(2)">Accuracy</a></li>
+          <li class="yelp-nav-button" ng-class="{ active:panel.isSelected(3)}"><a href ng-click="panel.selectTab(3)">About</a></li>
+        </ul>
+    </div>
+
+
+    <div id="recommendations" class="panel" ng-show="panel.isSelected(1)" ng-controller="TableController as tbCtrl">
+        <p>Enter a restaurant that you like to get recommendations for similar restaurants!</p>
+        <div id="info">
+            <label for="address2">Restaurant Name: </label><input class="form-control" type="text" id="yelp-username" name="yelp-username"/ ng-model="user">
+            <button id="go-btn" class="btn btn-primary" ng-click="loadRecommendations(user)">
+                Get Recommendations!
+            </button>
+        </div>
+        <div id="results">
+            <table class="table table-hover">
+                <tr>
+                    <th ng:repeat="h in headers">{{h}}</th>
+                </tr>
+                <tr ng:repeat="r in restaurants">
+                    <td>{{r.name}}<br><a href ng-href="{{r.url}}">[Yelp It!]</a></td>
+                    <td>
+                        <div star-rating rating-value="r.stars" max="5" ></div>
+                    </td>
+                    <td>
+                        <ul class="list-inline">
+                            <li ng:repeat="c in r.categories">{{c}}</li>
+                        </ul>
+                    </td>
+                    <td><img ng-src="{{r.photo_url}}"/></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <div id="accuracy" class="panel" ng-show="panel.isSelected(2)">
+        <h4>Recommendation Accuracy</h4>
+        <p>To check the accuracy of our recommendations, we created this graph which shows how our recommendation engine connects restaurants based on similarity.</p>
+        <div id="search-box">
+            <input id="search" class="form-control typeahead" type="text" data-provide="typeahead">
+            <button class="btn" id="search-btn" onclick="searchNode()">Search</button>
+        </div>
+    </div>
+
+    <div class="panel" ng-show="panel.isSelected(3)">
+        <h4>About the Project</h4>
+        <p>Our goal was to create a restaurant recommendation engine based on Yelp reviews.</p>
+        <p>~</p>
+        <h4>The Team</h4>
+        <p>Mao Hu, Jesse Ling, Anna Miyajima, Rica Zhang, and Raylin Zhong</p>
+        
+    </div>
+    
+  </body>
+</html>

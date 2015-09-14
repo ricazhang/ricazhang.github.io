@@ -1,0 +1,27 @@
+[{
+    "_id": {
+        "$oid": "55296c4de4386722a83f21f0"
+    },
+    "business_id": "81IjU5L-t-QQwsE38C63hQ",
+    "categories": [
+        "Burgers",
+        "Gastropubs",
+        "Restaurants"
+    ],
+    "city": "Claremont",
+    "full_address": "128NOberlinAve\nClaremont, CA91711",
+    "latitude": 34.0948841,
+    "longitude": -117.7206854,
+    "name": "TheBackAbbey",
+    "neighborhoods": [],
+    "open": true,
+    "photo_url": "http: //s3-media4.ak.yelpcdn.com/bphoto/19sYSVQKzDIHEJDOJlgMPA/ms.jpg",
+    "review_count": 756,
+    "schools": [
+        "HarveyMuddCollege"
+    ],
+    "stars": 4,
+    "state": "CA",
+    "type": "business",
+    "url": "http: //www.yelp.com/biz/the-back-abbey-claremont"
+}]
