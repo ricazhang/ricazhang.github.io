@@ -39,6 +39,7 @@ goButton.click(function() {
       // $http.get('sample.json').success(function(data) { THIS STILL WORKS
 			$http.get(user_code + '.json').success(function(data) {
 				$scope.restaurants = data;
+				$('#results').fadeIn();
 			});
 		}
 		

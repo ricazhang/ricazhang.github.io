@@ -1,0 +1,196 @@
+{
+  "ssr_get_class_section_resp": {
+    "class_section_result": {
+      "ssr_crs_srch_count": "0",
+      "ssr_crs_gen_msg": null,
+
+      "class_sections": {
+
+        "ssr_class_section": {
+          "acad_career": "UGRD",
+          "acad_career_lov_descr": "Undergraduate",
+          "associated_class": "1",
+          "available_seats": "0",
+          "campus": "DUKE",
+          "campus_lov_descr": "Duke University",
+          "catalog_nbr": " 102",
+          "class_nbr": "5075",
+          "class_section": "01",
+          "class_type": "E",
+          "class_type_lov_descr": "Enrollment Section",
+          "combined_section": "C",
+          "combined_section_lov_descr": "Combined Section",
+          "consent": "I",
+          "consent_lov_descr": "Instructor Consent Required",
+          "crs_topic_id": "2",
+          "crs_topic_descr": "MASS INCARCERATION & BLACKNESS",
+          "crse_id": "000081",
+          "crse_id_lov_descr": "INTRO AFR/AFR-AMER ST",
+          "crse_offer_nbr": "1",
+          "descr200": "AAAS  102 - 01   Introduction to African and African American Studies",
+          "descrlong": "A range of disciplinary perspectives on key topics in African American Studies: slavery and abolitionism, theories of race and racism, gender and race, the era of Jim Crow, cultural expressions, political and intellectual thought, African American freedom struggles from the seventeenth through the twentieth centuries, and race and public policy. Instructor: Staff",
+          "effdt": "2015-08-24",
+          "end_dt": "2015-12-04",
+          "enrl_cap": "30",
+          "enrl_stat": "C",
+          "enrl_status_descr": "Closed",
+          "enrl_tot": "30",
+          "grading_basis": "GRD",
+          "grading_basis_lov_descr": "Graded",
+          "institution": "DUKEU",
+          "institution_lov_descr": "Duke University",
+          "instruction_mode": "P",
+          "instruction_mode_lov_descr": "In Person",
+          "location": "DURHAM",
+          "location_descr": "Durham",
+          "min_enrl": "0",
+          "print_topic": "Y",
+          "schedule_print": "Y",
+          "schedule_print_lov_descr": "Yes",
+          "session_code": "1",
+          "session_code_lov_descr": "Regular Academic Session",
+          "ssr_classnote_long": null,
+          "ssr_component": "LEC",
+          "ssr_component_lov_descr": "Lecture",
+          "ssr_crse_attr_long": "Undergraduate Bulletin\n\n(CCI) Cross Cultural Inquiry\n\nMiddle East Studies Center\n\n(CZ) Civilizations\n\n(SS) Social Sciences",
+          "ssr_crse_typoff_cd": "FALL",
+          "ssr_date_long": "8/24/2015 - 12/4/2015",
+          "ssr_drop_consent": "N",
+          "ssr_drop_consent_lov_descr": "No Special Consent Required",
+          "ssr_gbl_note_long": null,
+          "ssr_requisite_long": null,
+          "start_dt": "2015-08-24",
+          "strm": "1540",
+          "strm_lov_descr": "2015 Fall Term",
+          "subject": "AAAS",
+          "subject_lov_descr": "African and African American S",
+          "units_range": "1 units",
+          "wait_tot": "0",
+          "wait_cap": "30",
+          "course_title_long": "Introduction to African and African American Studies",
+          "student_language": "NULL",
+          "shift": "Array",
+          "uk_level": "NULL",
+          "student_grouping": "NULL",
+
+          "class_combined_section": {
+            "combined_section": [
+              {
+                "sctn_combined_id": "0534",
+                "class_nbr": "5075",
+                "ssr_classname_long": "AAAS 102-01\n\nLEC (5075)",
+                "ssr_status_long": "Closed",
+                "descr": "INTRO AFR/AFR-AMER ST",
+                "enrl_tot": "26",
+                "wait_tot": "0"
+              },
+              {
+                "sctn_combined_id": "0534",
+                "class_nbr": "8791",
+                "ssr_classname_long": "LIT 102-01\n\nLEC (8791)",
+                "ssr_status_long": "Closed",
+                "descr": "INTRO AFR/AFR-AMER ST",
+                "enrl_tot": "4",
+                "wait_tot": "0"
+              }
+            ]
+          },
+
+          "class_components": {
+            "class_component": {
+              "ssr_component": "LEC",
+              "ssr_component_lov_descr": "Lecture",
+              "optional_section": "N",
+              "optional_section_lov_descr": "Required",
+              "class_component_sections": null
+            }
+          },
+
+          "class_meeting_patterns": {
+            "class_meeting_pattern": {
+              "crse_id": "000081",
+              "crse_offer_nbr": "1",
+              "strm": "1540",
+              "session_code": "1",
+              "session_code_lov_descr": "Regular Academic Session",
+              "class_section": "01",
+              "class_mtg_nbr": "1",
+              "facility_id": "7224240",
+              "facility_id_lov_descr": "Friedl Bdg 240",
+              "meeting_time_start": "2015-09-13T10:05:00-04:00",
+              "meeting_time_end": "2015-09-13T11:20:00-04:00",
+              "mon": "N",
+              "tues": "Y",
+              "wed": "N",
+              "thurs": "Y",
+              "fri": "N",
+              "sat": "N",
+              "sun": "N",
+              "start_dt": "2015-08-24",
+              "end_dt": "2015-12-04",
+              "crs_topic_id": "0",
+              "crs_topic_id_lov_descr": null,
+              "descr": null,
+              "stnd_mtg_pat": "TTH",
+              "bldg_cd": "7224",
+              "scc_latitude": "0",
+              "scc_longitude": "0",
+              "ssr_mtg_sched_long": "TuTh 10:05AM - 11:20AM",
+              "ssr_mtg_loc_long": "Friedl Bdg 240",
+              "ssr_instr_long": "Wahneema Lubiano",
+              "ssr_mtg_dt_long": "2015-08-24 - 2015-12-04",
+              "ssr_topic_long": "TBA",
+              "class_instructors": {
+                "class_instructor": {
+                  "crse_id": "000081",
+                  "crse_offer_nbr": "1",
+                  "strm": "1540",
+                  "strm_lov_descr": "2015 Fall Term",
+                  "session_code": "1",
+                  "session_code_lov_descr": null,
+                  "class_section": "01",
+                  "class_mtg_nbr": "1",
+                  "emplid": "0403216",
+                  "instr_role": "PI",
+                  "instr_role_lov_descr": "Primary Instructor",
+                  "sched_print_instr": "Y",
+                  "sched_print_instr_lov_descr": "Yes",
+                  "name_display": "Wahneema Lubiano",
+                  "last_name": "Lubiano",
+                  "first_name": "Wahneema",
+                  "encrypted_emplid": "M/vcR8Y8ytE="
+                }
+              }
+            }
+          },
+
+          "class_text_books": {
+            "class_text_book": {
+              "ssr_cls_txb_none": null,
+              "ssr_cls_txb_status": null,
+              "ssr_cls_txb_status_lov_descr": null,
+              "ssr_cls_txb_text": null,
+              "textbook_message": "Textbooks to be determined",
+              "ssr_cls_txb_none_descr": null,
+              "text_books_details": null
+            }
+          },
+
+          "enrollment_details": {
+            "enrollment_information": {
+              "add_consent": "I",
+              "add_consent_lov_descr": "Instructor Consent Required",
+              "drop_consent": null,
+              "drop_consent_lov_descr": null,
+              "enrollment_requirements": null,
+              "requirement_designation": null,
+              "class_attributes": "(CCI) Cross Cultural Inquiry(CZ) Civilizations(SS) Social Sciences"
+            }
+          }
+
+        } // END ssr_class_section
+      } // END class_sections
+    }, // END class_section_result
+    "@xmlns": "http://xmlns.oracle.com/Enterprise/Tools/services"
+  } // END ssr_get_class_section_resp
+} // END END

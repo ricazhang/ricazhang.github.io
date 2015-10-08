@@ -34,8 +34,9 @@
 
     <div id="recommendations" class="panel" ng-show="panel.isSelected(1)" ng-controller="TableController as tbCtrl">
         <p>Enter a restaurant that you like to get recommendations for similar restaurants!</p>
+        <p>Please note, this is in tester mode so we only support recommendations for the restaurants Veggie Galaxy and The Back Abbey.</p>
         <div id="info">
-            <label for="address2">Restaurant Name: </label><input class="form-control" type="text" id="yelp-username" name="yelp-username"/ ng-model="user">
+            <label for="yelp-username">Restaurant Name: </label><input class="form-control" type="text" id="yelp-username" name="yelp-username"/ ng-model="user">
             <button id="go-btn" class="btn btn-primary" ng-click="loadRecommendations(user)">
                 Get Recommendations!
             </button>
@@ -71,10 +72,10 @@
         </div>
     </div>
 
-    <div class="panel" ng-show="panel.isSelected(3)">
+    <div id="about" class="panel" ng-show="panel.isSelected(3)">
         <h4>About the Project</h4>
         <p>Our goal was to create a restaurant recommendation engine based on Yelp reviews.</p>
-        <p>~</p>
+        <br>
         <h4>The Team</h4>
         <p>Mao Hu, Jesse Ling, Anna Miyajima, Rica Zhang, and Raylin Zhong</p>
         

@@ -29,10 +29,10 @@ header {
 
 #yelp-nav {
 	background-color: #BA1111;
-	margin-bottom: 2em;
 }
 
 ul#yelp-nav-ul {
+	margin-left: 1em;
 }
 
 li.yelp-nav-button a {
@@ -41,6 +41,18 @@ li.yelp-nav-button a {
 
 #yelp-nav-button:active {
 
+}
+
+#recommendations {
+	margin: 2em auto;
+}
+
+#accuracy {
+	margin: 2em auto;
+}
+
+#about {
+	margin: 2em auto;
 }
 
 input {
@@ -54,7 +66,7 @@ input {
 }
 
 #go-btn {
-	margin: 1em;
+	margin: 1em auto;
 	border: 2px solid #BA1111;
 	background-color: white;
 	color: #BA1111;

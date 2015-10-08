@@ -95,6 +95,7 @@ d3.json("Restaurants.json", function(error, graph) {
 
 function searchNode() {
     //find the node
+
     var selectedVal = document.getElementById('search').value;
     var node = svg.selectAll(".node");
     if (selectedVal == "none") {
