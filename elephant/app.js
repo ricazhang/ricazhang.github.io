@@ -37,7 +37,7 @@ function getRandomColor() {
 }
 
 function loadElephantData() {
-    $.getJSON("locations.json")
+    $.getJSON("full-locations.json")
         .then(function(json) {
             $.each(json, function(index, jsonObject) {
                 var name = jsonObject["name"];
@@ -83,6 +83,8 @@ function loadElephantData() {
 
                 // calculate distance
                 var locations = elephantLocations[elephantNames[i]];
+                console.log(elephantNames[i]);
+                console.log(locations);
                 var totalDistance = 0;
                 for (var j = 0; j < locations.length - 1; j++) {
                     var dist = getDistance(locations[j]["lat"], locations[j]["lng"], locations[j + 1]["lat"], locations[j + 1]["lng"]);
