@@ -1,0 +1,114 @@
+html {
+	background: none;
+}
+
+#photo-background-dim {
+	background-color: #262626;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: block;
+	overflow: scroll;
+}
+
+#image-viewer {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+#image-viewer img {
+	height: 85%;
+	width: auto;
+	position: absolute;
+  z-index: 20;
+  left: 25%;
+  transition: transform 0.4s;
+}
+/* PHOTO GRID */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+#photos-section ul {
+    list-style: none;
+    margin: 0 2em 0 2em;
+    padding: 0 0 0 0;
+    clear: both;
+}
+
+#photos-section ul .square {
+    width: 33.33%; height: auto;
+    position: relative;
+    float: left;
+    margin: 0 0 0 0;
+    padding: 0 0 33.33% 0;
+    overflow:hidden;
+    transition: 0.8s ease;
+}
+
+#photos-section ul .square img {
+    max-width: none;
+    width: 100%;
+    padding: 2em;
+    position: absolute;
+    top: 0; left: 0;
+}
+#photos-section ul .square img:hover {
+	cursor: pointer;
+}
+/* END PHOTO GRID */
+
+
+/* RESPONSIVENESS */
+/* slightly narrow desktop */
+@media screen and (max-width: 870px) {
+	#photos-section ul .square {
+      width: 50%;
+      padding-bottom: 50%;
+  }
+} /* end slightly narrow desktop */
+
+/* narrow desktop web browsers */
+@media screen and (max-width: 720px) {
+	#image-viewer img {
+  	width: 90%;
+    height: auto;
+    left: 5%;
+    top: 15%;
+	}
+}
+
+/* super narrow desktop */
+@media screen and (max-width: 580px) {
+	#photos-section ul .square {
+      width: 100%;
+      padding-bottom: 100%;
+  }
+} /* end super narrow desktop */
+
+/* mobile */
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+	#photos-section {
+		font-size: 2.75em;
+		padding-top: 2em;
+	}
+
+	#photos-section ul .square {
+      width: 100%;
+      padding-bottom: 100%;
+  }
+  
+  #photos-section ul {
+  	margin: 0;
+  }
+  
+  #image-viewer img {
+  	width: 90%;
+    height: auto;
+    left: 5%;
+	}
+} /* end mobile */

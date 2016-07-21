@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta name="author" content="Rica Zhang">
+	<title>Rica Zhang</title>
+	<link rel="stylesheet" href="./main.css">
+	<link rel="stylesheet" href="./resume.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,400italic' rel='stylesheet'>
+	
+	<script src="jquery-1.11.2.min.js"></script>
+	<script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	
+</head>
+
+<body id="resume">
+	<div class="photo-background-dim"></div>
+	<div class="image-viewer"><img/></div>
+
+	<header>
+		<nav>
+			<ul id="menu-container">
+				<li class="menu-btn" id="home-menu-btn"><a href="index.html" class="menu-link" id="nav-home">Home</a></li>
+				<li class="menu-btn" id="resume-menu-btn"><a href="resume.html" class="menu-link" id="nav-resume">Resume</a></li>
+				<li class="menu-btn" id="photos-menu-btn"><a href="photos.html" class="menu-link" id="nav-photos">Photos</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="center-box" id="resume-center-box">
+		<div class="spacer-3"></div>
+		
+		<div id="resume-menu">
+			<ul>
+				<li><a id="menu-introduction" class="resume-menu-item" href="#">Introduction</a></li>
+				<li><a id="menu-education" class="resume-menu-item" href="#">Education</a></li>
+				<li><a id="menu-skills" class="resume-menu-item" href="#">Skills</a></li>
+				<li><a id="menu-experience" class="resume-menu-item" href="#">Experience</a></li>
+				<li><a id="menu-projects" class="resume-menu-item" href="#">Projects</a></li>
+				<!--<li><a id="menu-campus" class="resume-menu-item" href="#">Campus & Volunteer</a></li>-->
+			</ul>
+		</div><!-- end resume-menu -->
+		
+		<div id="resume-section">
+			<!--<div class="warning-text">NOTE: This page is a work in progress...</div>
+			<div class="spacer"></div>-->
+			
+			
+			<div id="introduction">
+				<div class="centered" id="name"><h1>Rica Zhang</h1></div>
+				<p class="centered">
+					<a class="resume-link" href="https://www.linkedin.com/in/ricazhang">LinkedIn</a> &
+					<a class="resume-link" href="github.com/ricazhang">Github</a>
+				</p>
+			</div>
+			<div id="education">
+				<h2 class="resume-section-title">Education</h2>
+				<div id="duke">
+					<div class="resume-super-strong">DUKE UNIVERSITY</div>
+					<div class="subtitle">Computer Science major, Environmental Science & Policy minor 
+					<span class="horizontal-bar">|</span> 
+					Graduated: May 2016</div>
+					<div class="description">Coursework 
+						<a class="resume-link" id="expand-courses" href=""><span>expand</span><span class="hidden">hide</span></a>
+						<div id="relevant-courses">
+							<ul>
+								<li>Operating Systems</li>
+								<li>Design and Analysis of Algorithms</li>
+								<li>Adaptive Web Development</li>
+								<li>Software Design and Implementation</li>
+								<li>Everything Data</li>
+								<li>Computer Architecture</li>
+								<li>Data Structures</li>
+								<li>Book Art: Typography</li>
+								<li>Advanced Literacy in Chinese </li>
+							</ul>
+						</div><!-- end relevant-courses -->
+					</div>
+				</div><!-- end duke -->
+				
+				<div id="mira-loma">
+					<div class="resume-super-strong">MIRA LOMA HIGH SCHOOL</div>
+					<div class="subtitle">International Baccalaureate Program 
+					<span class="horizontal-bar">|</span>  Graduated: June 2012</div>
+				</div><!-- end mira-loma --> 
+			</div><!-- end education -->
+			
+			<div id="skills">
+				<h2 class="resume-section-title">Skills</h2>
+				<div class="description">Java, Python, HTML5/CSS3, JavaScript, Angular.js</div> 
+			</div><!-- end skills-->
+			
+			<div id="experience">
+				<h2 class="resume-section-title">Experience</h2>
+				<div id="colab">
+					<div class="resume-super-strong">INNOVATION COLAB</div>
+					<div class="subtitle">Technical Consultant 
+					<span class="horizontal-bar">|</span> 09.2015 - 05.2016</div>
+					<div class="description">I will be expanding the Duke University APIs, which
+					include information on courses and DukeCard usage among other things. I will also be 
+					holding office hours for students working on a variety of technical projects.</div>
+				</div><!-- end colab -->
+				
+				<div class="spacer-half"></div>
+				
+				<div id="blackrock">
+					<div class="resume-super-strong">BLACKROCK</div>
+					<div class="subtitle">Summer Software Analyst in the Aladdin Product Group 
+					<span class="horizontal-bar">|</span> 05.2015 - 07.2015</div>
+					<div class="description">I created an 'app store' web application for developers
+					to download and install tools such as Git and Eclipse with pre-configured BlackRock settings.
+					<span class="technologies"><br>Technologies: Java, Python, Bash, Angular.js</span>
+					<div class="spacer-half"></div>
+					For the company hackathon, my team and I created a JavaScript library to track user data in BlackRock
+					web applications. This data would be processed and then displayed in a web application. 
+					<span class="technologies"><br>Technologies: Java, Angular.js, d3.js, lilbro.js, Solr</span></div>
+					</div>
+					<div
+				</div><!-- end blackrock -->
+				
+				<div class="spacer-half"></div>
+				
+				<div id="ndustrial">
+					<div class="resume-super-strong">&lsaquo;/NDUSTRIAL.IO&rsaquo;</div>
+					<div class="subtitle">Software Intern 
+					<span class="horizontal-bar">|</span> 03.2015 - 05.2015</div>
+					<div class="description"> I learned JavaScript and Angular.js in order to create 
+					a questionnaire to collect data from &lsaquo;/ndustrial.io&rsaquo; clients.
+					<span class="technologies"><br>Technologies: Angular.js</span></div>
+				</div><!-- end ndustrial -->
+				
+				<div class="spacer-half"></div>
+				
+				<div id="uta">
+					<div class="resume-super-strong">DUKE UNIVERSITY COMPUTER SCIENCE DEPARTMENT</div>
+					<div class="subtitle">Teaching Assistant 
+					<span class="horizontal-bar">|</span> 08.2014 - 05.2015</div>
+					<div class="description">
+					<ul>
+						<li>CS 201 - Data Structures</li>
+						<li>CS 101 - Introduction to Computer Science</li>
+					</ul>
+					I helped students understand complex homework problems, 
+					graded midterms and finals, and taught a lab section.
+					</div>
+				</div><!-- end uta -->
+			</div><!-- end experience -->
+			
+			<div id="projects">
+				<h2 class="resume-section-title">Projects</h2>
+				<div class="resume-super-strong">Web</div>
+				<div class="subtitle">Some of the projects below are either still works in progress or cannot 
+				be viewed because they are owned by the company I worked for at the time.</div>
+				<div class="project-photos" id="web-projects">
+					<div class="spacer"></div>
+					<ul>
+						<li class="square-resume" id="schedulator"><a href="http://ricazhang.github.io/schedulator">
+							<img src="images/schedulator sample.png"/>
+						</a></li>
+						<li class="square-resume" id="yelp"><a href="http://ricazhang.github.io/yelp-recommendations/">
+							<img src="images/yelp sample.png"/>
+						</a></li>
+					</ul>
+				</div><!-- end photos -->
+				
+				<div class="resume-super-strong">Java</div>
+				<div class="subtitle">These projects were created for the group projects in my 
+				Software Design and Implementation class in Fall 2014.</div>
+				<ul>
+					<li><strong>SLogo</strong> is a programming language that controls the movements and actions of 
+					the turtle in this application. For example, you can tell the turtle to draw a 
+					line while moving forward 50 units.</li>
+					<li><strong>Cell Society</strong> is a grid program that has cells which each simulate certain
+					states. In the example photo below, we have Wator World. This world has shark 
+					cells and fish cells. As you run the program, the shark and fish cells either 
+					eat, get eaten, or reproduce based on the rules of the game.</li>
+					<li><strong>VOOGA</strong> is a game engine in which you can design and then play a turn-based 
+					strategy game.</li>
+					<li><strong>Clunker Spelunker</strong> is a top-down shooting game. Try to shoot all the polluting
+					 cars off the road!</li>
+				</ul>
+				<div class="project-photos" id="java-projects">
+					<!--
+					<div class="spacer"></div>
+					<ul>
+						<li class="square-resume" id="slogo"><img src="images/slogo sample.png"/></li>
+						<li class="square-resume" id="cell society"><img src="images/cell society sample.png"/></li>
+						<li class="square-resume" id="vooga"><img src="images/vooga sample.png"/></li>
+						<li class="square-resume" id="clunker"><img src="images/clunker sample.png"/></li>
+					</ul>
+				</div>--><!-- end photos -->
+			</div><!-- end projects -->
+
+		</div><!-- end resume-section -->
+		
+	</div><!-- end center-box resume -->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73212740-1', 'auto');
+  ga('send', 'pageview');
+
+	</script>	
+	<script src="./main.js"></script>
+</body>
+</html>
